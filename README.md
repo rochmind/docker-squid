@@ -20,5 +20,9 @@ docker run  -v <configPath>/squid.conf:/etc/squid/squid.conf:ro \
             -p 3128:3128 \
             chrisdaish/squid
 ```
+With restart
+
+```
 docker run --name squid --restart unless-stopped -p 3128:3128  rochmind /
 docker-squid 
+```
