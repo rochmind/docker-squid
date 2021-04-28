@@ -3,7 +3,7 @@ FROM alpine:3.13
 MAINTAINER rochmind@gmail.com
 
 RUN apk update \
-    && apk add squid=4.13 \
+    && apk add squid=5.0.5-r0 \
     && apk add curl \
     && rm -rf /var/cache/apk/*
 
