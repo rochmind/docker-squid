@@ -7,7 +7,7 @@ How to use
 =========
 
 ```
-docker run -p 3128:3128 chrisdaish/squid
+docker run -p 3128:3128 rochmind/squid
 ```
 
 With bespoke configuration:
@@ -18,10 +18,10 @@ docker run  -v <configPath>/squid.conf:/etc/squid/squid.conf:ro \
             -v /var/log/squid:/var/log/squid:rw \
             -v /etc/localtime:/etc/localtime:ro \
             -p 3128:3128 \
-            chrisdaish/squid
+            rochmind/squid
 ```
 With restart
 
 ```
-docker run --name squid --restart unless-stopped -p 3128:3128 chrisdaish/squid
+docker run --name squid --restart unless-stopped -p 3128:3128 rochmind/squid
 ```
