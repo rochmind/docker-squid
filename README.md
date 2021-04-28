@@ -1,7 +1,7 @@
 Squid
 =====
 
-Slim image (18MB) of Squid 4.8 running under Alpine Linux 3.10.
+Slim image of Squid 5.0 running under Alpine Linux 3.13
 
 How to use
 =========
