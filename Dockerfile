@@ -10,7 +10,7 @@ RUN apk update \
 
 COPY start-squid.sh /usr/local/bin/
 
-HEALTHCHECk \
+HEALTHCHECK \
   CMD squidclient -h localhost cache_object://localhost/counters || exit 1
 
 ENTRYPOINT ["/usr/local/bin/start-squid.sh"]
